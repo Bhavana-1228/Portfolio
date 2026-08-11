@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Chinnaobaiahgari Bhavana Reddy | Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Chinnaobaiahgari Bhavana Reddy, a Frontend Developer and Python programmer specializing in building responsive and interactive web applications.">
+  <meta name="keywords" content="Bhavana Reddy, Developer Portfolio, Frontend Developer, Python Programmer, HTML, CSS, JavaScript, React, Data Analyst">
+  <meta name="author" content="Chinnaobaiahgari Bhavana Reddy">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chinnaobaiahgari Bhavana Reddy | Developer Portfolio">
+  <meta property="og:description" content="Explore my projects, skills, and learning journey in frontend development and Python programming.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpeg">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Canvas Background for Starfield Particles -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="header">
+    <div class="container nav">
+      <!-- Logo -->
+      <a href="#home" class="logo" id="nav-logo">Bhavana<span>.Reddy</span></a>
+      
+      <!-- Nav Toggle Button for Mobile -->
+      <button class="nav-toggle" aria-label="Toggle Navigation Menu" id="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Nav Links -->
+      <nav class="nav-links" id="navigation-menu">
+        <a href="#home" id="nav-home-link">Home</a>
+        <a href="#about" id="nav-about-link">About</a>
+        <a href="#skills" id="nav-skills-link">Skills</a>
+        <a href="#goals" id="nav-goals-link">Goals</a>
+        <a href="#projects" id="nav-projects-link">Projects</a>
+        <a href="#contact" id="nav-contact-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Sections -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow" id="personal-eyebrow">HELLO, I'M</p>
+          <h1 class="hero-name" id="personal-name">Chinnaobaiahgari Bhavana Reddy</h1>
+          <div class="hero-subtitle" id="personal-subtitle">Frontend Developer & Python Enthusiast</div>
+          <p class="hero-desc" id="personal-description">
+            I am a passionate frontend developer and Python programmer. I specialize in building responsive, modern, and interactive web applications while continuously strengthening my knowledge in Full-Stack Development and Data Analytics.
+          </p>
+          
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="personal-resume">View Resume <i class="fa-solid fa-file-pdf"></i></a>
+          </div>
+          
+          <!-- Social Icons -->
+          <div class="social-links">
+            <a href="https://github.com/Bhavana-1228" target="_blank" rel="noopener noreferrer" class="github-link-url" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bhavana-reddy-chinnaobaiahgari-b45190299/" target="_blank" rel="noopener noreferrer" class="linkedin-link-url" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:bhavanareddy2328@gmail.com" class="email-link-url" aria-label="Send Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <!-- Profile Portrait Picture -->
+        <div class="hero-img-container">
+          <div class="hero-img-wrapper">
+            <img src="assets/profile.jpeg" alt="Chinnaobaiahgari Bhavana Reddy" id="personal-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-subtitle" id="about-tagline">Building modern web experiences with curiosity and consistency</p>
+        
+        <div class="about-grid">
+          <div class="glass-card about-text">
+            <h3>Who I Am</h3>
+            <p id="about-bio-p1">
+              I regularly practice programming to strengthen my fundamentals and problem-solving abilities. My current focus is developing robust and responsive client-side experiences while expanding my capabilities in backend technologies and data visualization.
+            </p>
+            <p id="about-bio-p2">
+              I am actively seeking opportunities to start my professional journey in the IT industry, where I can apply my analytical thinking and technical skills to build meaningful software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-subtitle">A collection of tools, technologies, and concepts I work with</p>
+        
+        <!-- Loaded dynamically from portfolio-data.js -->
+        <div class="skills-grid" id="skills-grid">
+          <div class="skill-category glass-card">
+            <h3>Frontend Development</h3>
+            <div class="skills-list">
+              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> HTML5</span>
+              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> CSS3</span>
+              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> React.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Goals & Strengths Section -->
+    <section class="section goals-strengths" id="goals">
+      <div class="container">
+        <h2 class="section-title">Goals & <span>Strengths</span></h2>
+        <p class="section-subtitle">What drives me and the strengths I leverage to get there</p>
+        
+        <div class="goals-strengths-grid">
+          <!-- Career Goals Card -->
+          <div class="glass-card">
+            <h3 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 2rem; color: #fff;">Career Goals</h3>
+            <div class="goals-list" id="goals-list">
+              <!-- Loaded dynamically from portfolio-data.js -->
+            </div>
+          </div>
+          
+          <!-- Core Strengths Card -->
+          <div class="glass-card">
+            <h3 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 2rem; color: #fff;">Core Strengths</h3>
+            <div class="strengths-list" id="strengths-list">
+              <!-- Loaded dynamically from portfolio-data.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">Some of the projects I've built and work on</p>
+        
+        <!-- Loaded dynamically from portfolio-data.js -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project Card Template (Populated by script.js) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        
+        <!-- Contact Details Info -->
+        <div class="contact-info">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Let's <span>Connect</span></h2>
+          <p>
+            I'm currently looking for new opportunities and collaborations in Software Development and Data Analytics. Feel free to reach out if you have any questions or just want to say hi!
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Address</h4>
+                <p id="contact-email-text">bhavanareddy2328@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card">
+          <form id="contact-form" autocomplete="off">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Write your message..." required></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 10px;" id="contact-submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            
+            <!-- Status Message -->
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://github.com/Bhavana-1228" target="_blank" rel="noopener noreferrer" class="github-link-url" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bhavana-reddy-chinnaobaiahgari-b45190299/" target="_blank" rel="noopener noreferrer" class="linkedin-link-url" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:bhavanareddy2328@gmail.com" class="email-link-url" aria-label="Send Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; <span id="year">2026</span> Chinnaobaiahgari Bhavana Reddy. Made with <span>❤</span> & JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Portfolio Data configuration file -->
+  <script src="portfolio-data.js"></script>
+  <!-- Main interaction and animation script -->
+  <script src="script.js"></script>
+</body>
+</html>
