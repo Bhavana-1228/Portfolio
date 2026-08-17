@@ -1,257 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>Chinnaobaiahgari Bhavana Reddy | Developer Portfolio</title>
-  <meta name="description" content="Personal portfolio of Chinnaobaiahgari Bhavana Reddy, a Frontend Developer and Python programmer specializing in building responsive and interactive web applications.">
-  <meta name="keywords" content="Bhavana Reddy, Developer Portfolio, Frontend Developer, Python Programmer, HTML, CSS, JavaScript, React, Data Analyst">
-  <meta name="author" content="Chinnaobaiahgari Bhavana Reddy">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Chinnaobaiahgari Bhavana Reddy | Developer Portfolio">
-  <meta property="og:description" content="Explore my projects, skills, and learning journey in frontend development and Python programming.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/profile.jpeg">
-
-  <!-- Preconnect Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Canvas Background for Starfield Particles -->
-  <canvas id="space-canvas"></canvas>
-
-  <!-- Sticky Glassmorphic Header -->
-  <header class="header">
-    <div class="container nav">
-      <!-- Logo -->
-      <a href="#home" class="logo" id="nav-logo">Bhavana<span>.Reddy</span></a>
-      
-      <!-- Nav Toggle Button for Mobile -->
-      <button class="nav-toggle" aria-label="Toggle Navigation Menu" id="mobile-nav-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhavana Reddy Chinnaobaiahgari | AI & Data Science Professional & Full-Stack Developer portfolio"
+    />
+    <title>Bhavana Reddy Chinnaobaiahgari | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="space-canvas"></canvas>
+    
+    <!-- Navigation Topbar -->
+    <header class="topbar">
+      <a href="#home" class="brand">Bhavana <span>Reddy</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
-      <!-- Nav Links -->
-      <nav class="nav-links" id="navigation-menu">
-        <a href="#home" id="nav-home-link">Home</a>
-        <a href="#about" id="nav-about-link">About</a>
-        <a href="#skills" id="nav-skills-link">Skills</a>
-        <a href="#goals" id="nav-goals-link">Goals</a>
-        <a href="#projects" id="nav-projects-link">Projects</a>
-        <a href="#contact" id="nav-contact-link">Contact</a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main Content Sections -->
-  <main>
-    
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow" id="personal-eyebrow">HELLO, I'M</p>
-          <h1 class="hero-name" id="personal-name">Chinnaobaiahgari Bhavana Reddy</h1>
-          <div class="hero-subtitle" id="personal-subtitle">Frontend Developer & Python Enthusiast</div>
-          <p class="hero-desc" id="personal-description">
-            I am a passionate frontend developer and Python programmer. I specialize in building responsive, modern, and interactive web applications while continuously strengthening my knowledge in Full-Stack Development and Data Analytics.
-          </p>
-          
-          <!-- Action Buttons -->
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="personal-resume">View Resume <i class="fa-solid fa-file-pdf"></i></a>
-          </div>
-          
-          <!-- Social Icons -->
-          <div class="social-links">
-            <a href="https://github.com/Bhavana-1228" target="_blank" rel="noopener noreferrer" class="github-link-url" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/bhavana-reddy-chinnaobaiahgari-b45190299/" target="_blank" rel="noopener noreferrer" class="linkedin-link-url" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:bhavanareddy2328@gmail.com" class="email-link-url" aria-label="Send Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          </div>
+      <div class="hero__text">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Bhavana Reddy</h1>
+        <p class="subtitle">Aspiring AI & Data Science Professional | Python & Full-Stack Developer</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="#projects">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="https://docs.google.com/document/d/1VociQVh3lg1trtPYEakLJSayLQqHQZv0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume <i class="fa-solid fa-eye"></i></a>
         </div>
-        
-        <!-- Profile Portrait Picture -->
-        <div class="hero-img-container">
-          <div class="hero-img-wrapper">
-            <img src="assets/profile.jpeg" alt="Chinnaobaiahgari Bhavana Reddy" id="personal-image">
-          </div>
+        <div class="hero__quick-links">
+          <a href="#contact" aria-label="Contact Me" title="Contact Me"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/bhavana-reddy-chinnaobaiahgari-b45190299/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Bhavana-1228" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
         </div>
+      </div>
+      <div class="hero__image">
+        <img src="assets/profile.jpeg" alt="Bhavana Reddy Chinnaobaiahgari" />
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="section about" id="about">
-      <div class="container">
-        <h2 class="section-title">About <span>Me</span></h2>
-        <p class="section-subtitle" id="about-tagline">Building modern web experiences with curiosity and consistency</p>
-        
-        <div class="about-grid">
-          <div class="glass-card about-text">
-            <h3>Who I Am</h3>
-            <p id="about-bio-p1">
-              I regularly practice programming to strengthen my fundamentals and problem-solving abilities. My current focus is developing robust and responsive client-side experiences while expanding my capabilities in backend technologies and data visualization.
+    <!-- Main Content -->
+    <main>
+      
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="section-tag">About Me</p>
+          <h2>Building modern web experiences with curiosity and consistency</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__content">
+            <p>
+              I am an aspiring Artificial Intelligence and Data Science professional with a strong foundation in Python, Java, and full-stack web development. I enjoy building secure, modern web applications using Flask, HTML5, CSS3, and JavaScript.
             </p>
-            <p id="about-bio-p2">
-              I am actively seeking opportunities to start my professional journey in the IT industry, where I can apply my analytical thinking and technical skills to build meaningful software solutions.
+            <p>
+              I have completed internships in Artificial Intelligence and Advanced Data Science, which provided me with hands-on exposure to data preprocessing, machine learning algorithms, and exploratory data analysis. 
+            </p>
+            <p>
+              I am actively seeking an entry-level software development or data analysis role where I can apply my problem-solving capabilities, technical skills, and software development foundations to build meaningful solutions and contribute to organizational growth.
             </p>
           </div>
+          <div class="about__image-card">
+            <img src="assets/profile.jpeg" alt="About Bhavana Reddy" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-      <div class="container">
-        <h2 class="section-title">My <span>Skills</span></h2>
-        <p class="section-subtitle">A collection of tools, technologies, and concepts I work with</p>
-        
-        <!-- Loaded dynamically from portfolio-data.js -->
-        <div class="skills-grid" id="skills-grid">
-          <div class="skill-category glass-card">
+      <!-- Services Section (Expertise) -->
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="section-tag">My Expertise</p>
+          <h2>Skills I am actively building and applying</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
             <h3>Frontend Development</h3>
-            <div class="skills-list">
-              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> HTML5</span>
-              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> CSS3</span>
-              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> JavaScript</span>
-              <span class="skill-tag"><i class="fa-solid fa-code-commit"></i> React.js</span>
-            </div>
-          </div>
+            <p>Creating responsive, interactive, and modern user interfaces using HTML5, CSS3, JavaScript, and responsive layouts.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Backend & API Development</h3>
+            <p>Developing backend systems, web logic, REST APIs, and database structures using Python, Flask, Java, and MySQL.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI & Data Science</h3>
+            <p>Applying machine learning concepts, statistical methodologies, and analytical approaches to extract insights from raw data.</p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Career Goals & Strengths Section -->
-    <section class="section goals-strengths" id="goals">
-      <div class="container">
-        <h2 class="section-title">Goals & <span>Strengths</span></h2>
-        <p class="section-subtitle">What drives me and the strengths I leverage to get there</p>
-        
-        <div class="goals-strengths-grid">
-          <!-- Career Goals Card -->
-          <div class="glass-card">
-            <h3 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 2rem; color: #fff;">Career Goals</h3>
-            <div class="goals-list" id="goals-list">
-              <!-- Loaded dynamically from portfolio-data.js -->
-            </div>
-          </div>
-          
-          <!-- Core Strengths Card -->
-          <div class="glass-card">
-            <h3 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 2rem; color: #fff;">Core Strengths</h3>
-            <div class="strengths-list" id="strengths-list">
-              <!-- Loaded dynamically from portfolio-data.js -->
-            </div>
-          </div>
+      <!-- Projects Section -->
+      <section class="section projects" id="projects">
+        <div class="section-heading">
+          <p class="section-tag">Featured Projects</p>
+          <h2>Projects that demonstrate my technical range and creativity</h2>
         </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-      <div class="container">
-        <h2 class="section-title">Featured <span>Projects</span></h2>
-        <p class="section-subtitle">Some of the projects I've built and work on</p>
-        
-        <!-- Loaded dynamically from portfolio-data.js -->
-        <div class="projects-grid" id="projects-grid">
-          <!-- Project Card Template (Populated by script.js) -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-      <div class="container contact-grid">
-        
-        <!-- Contact Details Info -->
-        <div class="contact-info">
-          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Let's <span>Connect</span></h2>
-          <p>
-            I'm currently looking for new opportunities and collaborations in Software Development and Data Analytics. Feel free to reach out if you have any questions or just want to say hi!
-          </p>
-          
-          <div class="contact-details">
-            <div class="contact-detail-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <h4>Email Address</h4>
-                <p id="contact-email-text">bhavanareddy2328@gmail.com</p>
+        <div class="projects__grid">
+          <!-- Password Generator -->
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Random Password Generator" />
+            <div class="project-card__info">
+              <h3>Random Password Generator</h3>
+              <p>Developed a full-stack Flask web application that generates cryptographically secure passwords using Python’s secrets module, adhering to OWASP security guidelines. Features a responsive UI with 3D canvas stars, customizable character sets, and TXT/CSV export.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
               </div>
             </div>
-            
-            <div class="contact-detail-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <h4>Location</h4>
-                <p>India</p>
+          </article>
+          
+          <!-- Python Practice -->
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="Python Practice Repository" />
+            <div class="project-card__info">
+              <h3>Python Practice Repository</h3>
+              <p>Created a comprehensive collection of Python scripts and Jupyter notebooks covering object-oriented programming (OOP), lists, dictionary comprehensions, custom exception handling, multithreading, and regular expressions.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>OOP</span>
+                <span>Multithreading</span>
+                <span>Jupyter</span>
               </div>
+            </div>
+          </article>
+
+          <!-- Personal Portfolio -->
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Personal Portfolio" />
+            <div class="project-card__info">
+              <h3>Personal Portfolio</h3>
+              <p>Built a premium, interactive developer portfolio. Features a particle background, dark theme glassmorphism cards, responsive menus, clean SEO tags, and contact forms integrating with FormSubmit.co's AJAX API.</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section skills" id="skills">
+        <div class="section-heading">
+          <p class="section-tag">Technical Skills</p>
+          <h2>My core stack, tools, and technical concepts</h2>
+        </div>
+        <div class="skills__groups">
+          <div class="skills__group">
+            <h3>Programming Languages</h3>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Web Technologies</h3>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">Flask</span>
+              <span class="chip">Responsive Web Design</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Databases</h3>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">Database Design</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Developer Tools</h3>
+            <div class="chip-row">
+              <span class="chip">VS Code</span>
+              <span class="chip">Eclipse</span>
+              <span class="chip">MySQL Workbench</span>
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">MS Office</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Domain Knowledge</h3>
+            <div class="chip-row">
+              <span class="chip">Artificial Intelligence</span>
+              <span class="chip">Data Science</span>
+              <span class="chip">Machine Learning Fundamentals</span>
+              <span class="chip">Data Analysis</span>
+              <span class="chip">Secure Application Development</span>
+              <span class="chip">OWASP Guidelines</span>
             </div>
           </div>
         </div>
-        
-        <!-- Contact Form -->
-        <div class="glass-card contact-form-card">
-          <form id="contact-form" autocomplete="off">
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section education" id="education">
+        <div class="section-heading">
+          <p class="section-tag">Education</p>
+          <h2>My academic foundation and learning milestones</h2>
+        </div>
+        <div class="education__grid">
+          <!-- B.Tech -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>Bachelor of Technology (B.Tech)</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Branch</span>
+                  <span class="edu-value">Artificial Intelligence and Data Science</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">College</span>
+                  <span class="edu-value">Annamacharya Institute of Technology and Sciences, New Boyanapalli, AP</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Duration</span>
+                  <span class="edu-value">Oct 2022 – May 2026</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">CGPA</span>
+                  <span class="edu-value">8.12 (77%)</span>
+                </div>
+              </div>
             </div>
-            
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" id="contact-email" class="form-control" placeholder="Enter your email" required>
+          </article>
+
+          <!-- Intermediate -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>Intermediate (MPC)</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Stream</span>
+                  <span class="edu-value">Mathematics, Physics, Chemistry (MPC)</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">College</span>
+                  <span class="edu-value">Sri Chaitanya Junior College, Kurnool, AP</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Duration</span>
+                  <span class="edu-value">Dec 2020 – Mar 2022</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Score</span>
+                  <span class="edu-value">77%</span>
+                </div>
+              </div>
             </div>
-            
-            <div class="form-group">
-              <label for="contact-message">Message</label>
-              <textarea id="contact-message" class="form-control" placeholder="Write your message..." required></textarea>
+          </article>
+
+          <!-- X Class -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>Secondary School Certificate (SSC)</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Board</span>
+                  <span class="edu-value">X Standard</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">School</span>
+                  <span class="edu-value">Good Shepherd EM High School, Nandyal, AP</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Duration</span>
+                  <span class="edu-value">Jun 2019 – Mar 2020</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">CGPA</span>
+                  <span class="edu-value">8.7</span>
+                </div>
+              </div>
             </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 10px;" id="contact-submit-btn">
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications & Internships Section -->
+      <section class="section education" id="certifications">
+        <div class="section-heading">
+          <p class="section-tag">Internships & Certifications</p>
+          <h2>Professional experience and specialized training</h2>
+        </div>
+        <div class="education__grid">
+          <!-- Corizo AI -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>Internship on Artificial Intelligence</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Organization</span>
+                  <span class="edu-value">Corizo</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Date</span>
+                  <span class="edu-value">Oct 2023</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Focus Area</span>
+                  <span class="edu-value">Acquired practical training on machine learning methodologies and artificial intelligence concepts.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- APSSDC Data Science -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>Internship on Advanced Data Science</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Organization</span>
+                  <span class="edu-value">APSSDC</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Date</span>
+                  <span class="edu-value">Feb 2024</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Focus Area</span>
+                  <span class="edu-value">Completed intensive training on statistical computing, exploratory data analysis, and advanced data science pipelines.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- edX Javascript -->
+          <article class="edu-card">
+            <div class="edu-details">
+              <h3>JavaScript Introduction Certification</h3>
+              <div class="edu-meta-list">
+                <div class="edu-meta-row">
+                  <span class="edu-key">Issuer</span>
+                  <span class="edu-value">edX</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Date</span>
+                  <span class="edu-value">Apr 2024</span>
+                </div>
+                <div class="edu-meta-row">
+                  <span class="edu-key">Focus Area</span>
+                  <span class="edu-value">Certified in modern JavaScript syntax, structural web scripting, DOM operations, and client-side logic development.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact" id="contact">
+        <div class="section-heading text-center">
+          <h2 class="contact-title">Contact Me</h2>
+          <p class="contact-subtitle">Have an opportunity, a project proposal, or just want to say hi? Drop a message!</p>
+        </div>
+        <div class="contact__card">
+          <form id="contact-form" class="contact__form">
+            <div class="form-group form-group--full">
+              <input id="contact-name" name="name" type="text" placeholder="Your Name" required />
+            </div>
+
+            <div class="form-group form-group--full">
+              <input id="contact-email" name="email" type="email" placeholder="Your Email" required />
+            </div>
+
+            <div class="form-group form-group--full">
+              <textarea id="contact-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" id="contact-send-btn" class="btn btn-primary contact-btn-full">
               Send Message <i class="fa-solid fa-paper-plane"></i>
             </button>
-            
-            <!-- Status Message -->
-            <div id="form-status" class="form-status"></div>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
           </form>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <h3>Bhavana Reddy Chinnaobaiahgari</h3>
+        <p>© <span id="year">2026</span> Bhavana Reddy Chinnaobaiahgari. All rights reserved.</p>
       </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="social-links">
-        <a href="https://github.com/Bhavana-1228" target="_blank" rel="noopener noreferrer" class="github-link-url" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/bhavana-reddy-chinnaobaiahgari-b45190299/" target="_blank" rel="noopener noreferrer" class="linkedin-link-url" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:bhavanareddy2328@gmail.com" class="email-link-url" aria-label="Send Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <div class="footer-links">
+        <p>bhavanareddy2328@gmail.com | +91 9515887989</p>
       </div>
-      <p class="footer-text">
-        &copy; <span id="year">2026</span> Chinnaobaiahgari Bhavana Reddy. Made with <span>❤</span> & JavaScript.
-      </p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Portfolio Data configuration file -->
-  <script src="portfolio-data.js"></script>
-  <!-- Main interaction and animation script -->
-  <script src="script.js"></script>
-</body>
+    <!-- Main interaction and animation script -->
+    <script src="script.js"></script>
+  </body>
 </html>
